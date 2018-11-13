@@ -1,0 +1,38 @@
+{
+  "name": "build-react-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc",
+    "test": "jest"
+  },
+  "bin": {
+    "build-react-cli": "bin/index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": ">=8.0"
+  },
+  "jest": {
+    "modulePaths": [
+      "./bin/**/*"
+    ]
+  },
+  "dependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/ncp": "^2.0.1",
+    "@types/ora": "^1.3.4",
+    "chalk": "^2.4.1",
+    "colors": "^1.3.2",
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "inquirer": "^6.2.0",
+    "jest": "^23.6.0",
+    "ncp": "^2.0.0",
+    "ora": "^3.0.0",
+    "ts-jest": "^23.10.4"
+  }
+}
